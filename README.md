@@ -30,9 +30,10 @@ in "" and use the "|" as Seperator!
     
 # Domain Name Files
 This Tool expects plain Text Files with a single Domain Name per Line as Input. For Example:
-        adcolony.com
-        googleadservices.com
-        101ad.com
+
+                adcolony.com
+                googleadservices.com
+                101ad.com
 
 # Recommendations
 Use seperate Files for custom Domains and dynamic Lists (from Web etc.)
