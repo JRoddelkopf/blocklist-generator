@@ -10,9 +10,11 @@ creating custom DNS Resolvs as well.
 
 # Usage
 Default:
+
         blocklist-generator <Domain List1|Domain ListN> <ZoneListFile> <ZoneFile> <BindCfgFile> <Options>
 
 Example:
+
         blocklist-generator "/root/ads-auto.list|/root/ads-custom.list" "/etc/bind/ads.list" "/etc/bind/ads.null" "/etc/bind/named.conf.local" -r
 
 This will read in the "ads-auto.list" and "ads-custom.list" Files, generates a Zone Configuration "ads.null" and a List of Zones pointing
@@ -31,9 +33,9 @@ in "" and use the "|" as Seperator!
 # Domain Name Files
 This Tool expects plain Text Files with a single Domain Name per Line as Input. For Example:
 
-                adcolony.com
-                googleadservices.com
-                101ad.com
+        adcolony.com
+        googleadservices.com
+        101ad.com
 
 # Recommendations
 Use seperate Files for custom Domains and dynamic Lists (from Web etc.)
