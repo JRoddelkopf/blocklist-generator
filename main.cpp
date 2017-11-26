@@ -130,7 +130,7 @@ void write_blocklist(std::string& path_list, std::string& path_zone, std::vector
     for(unsigned long int i = 0; i < entry_list.size(); i++)
     {
         // zone "101com.com" { type master; notify no; file "/etc/bind/null.zone.file"; };
-        file << "zone \"" + entry_list.at(i) + "\" { type master; notify no; file \"" << path_zone << "\"; };" << "\n";
+        file << "zone \"" + entry_list.at(i) + "\" { type master; notify no; file \"" << path_zone << "\"; allow-update { none; }; };" << "\n";
     }
     
     file.flush();
